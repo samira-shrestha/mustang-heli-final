@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Subrayada";
+  src: url("/assets/fonts/montserrat-subrayada.underline-bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-subrayada: "Subrayada", sans-serif;
+}
