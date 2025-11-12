@@ -9,6 +9,8 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
@@ -179,12 +181,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
-  .top-1\/2 {
-    top: calc(1/2 * 100%);
-  }
   .top-\[-10\%\] {
     top: -10%;
   }
@@ -197,14 +193,8 @@
   .top-\[-35\%\] {
     top: -35%;
   }
-  .top-\[70\%\] {
-    top: 70%;
-  }
   .top-\[80\%\] {
     top: 80%;
-  }
-  .top-\[90\%\] {
-    top: 90%;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -220,6 +210,12 @@
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-\[1\%\] {
+    left: 1%;
+  }
+  .left-\[2\%\] {
+    left: 2%;
   }
   .left-\[5\%\] {
     left: 5%;
@@ -250,6 +246,15 @@
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-14 {
+    margin-top: calc(var(--spacing) * 14);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
   }
   .mt-\[-13\%\] {
     margin-top: -13%;
@@ -319,24 +324,8 @@
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1\/2 {
-    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-\[70\%\] {
-    --tw-translate-y: calc(70% * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-y-\[80\%\] {
     --tw-translate-y: calc(80% * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-\[90\%\] {
-    --tw-translate-y: calc(90% * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .rotate-180 {
@@ -385,9 +374,6 @@
   .pt-\[60px\] {
     padding-top: 60px;
   }
-  .pr-0 {
-    padding-right: calc(var(--spacing) * 0);
-  }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
@@ -405,6 +391,10 @@
   }
   .font-subrayada {
     font-family: var(--font-subrayada);
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .text-\[14px\] {
     font-size: 14px;
@@ -568,6 +558,17 @@
   .xl\:text-\[96px\] {
     @media (width >= 80rem) {
       font-size: 96px;
+    }
+  }
+  .\32 xl\:top-\[50\%\] {
+    @media (width >= 96rem) {
+      top: 50%;
+    }
+  }
+  .\32 xl\:-translate-y-\[50\%\] {
+    @media (width >= 96rem) {
+      --tw-translate-y: calc(50% * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
 }
