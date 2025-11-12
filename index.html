@@ -15,15 +15,15 @@
 <body class="" style="background: linear-gradient(180deg, #303030 0%, #000000 100%);
 ">
     <main class="overflow-hidden">
-        <section class="landing-section">
+        <section class="landing-section" style="background: linear-gradient(180deg, #0376B8 0%, #9ADAFF 100%);">
             <div class="section-wrapper">
                 <div
-                    class="flex flex-col items-center justify-center mt-[60px] md:mt-[100px] mb-20 sm:mb-[120px] md:mb-40 lg:mb-[200px]">
+                    class="flex flex-col items-center justify-center pt-[60px] md:pt-[100px] mb-20 sm:mb-[120px] md:mb-40 lg:mb-[200px]">
                     <div class="w-[60%] sm:w-[40%] md:w-[225px] pb-6 mx-auto">
                         <img src="./assets/images/logo.svg" class="w-full h-full object-contain">
                     </div>
                     <h1
-                        class="font-subrayada text-[#FE7510] font-bold text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px]">
+                        class="font-subrayada text-[#FBFD55] font-bold text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px]">
                         COMING SOON</h1>
                     <p
                         class="max-w-[433px] font-medium text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-center text-white font-['Montserrat']">
@@ -31,13 +31,21 @@
                         hard
                         to bring you a better experience.
                         Please check back soon!</p>
-                    <div class="socials flex gap-4 mt-4 mb-12">
-                        <a href=""><i
-                                class="fa-brands fa-facebook-f text-white text-[20px] transition-transform duration-500 ease-in-out hover:scale-120"></i></a>
-                        <a href="https://www.instagram.com/mustang_heli88?igsh=d2RpYXphdXZmdWI1"><i
-                                class="fa-brands fa-instagram text-white text-[20px] transition-transform duration-500 ease-in-out hover:scale-120"></i></a>
-                        <a href="https://www.linkedin.com/company/new-mustang-helicopter-pvt-ltd/"><i
-                                class="fa-brands fa-linkedin-in text-white text-[20px] transition-transform duration-500 ease-in-out hover:scale-120"></i></a>
+                    <div class="socials flex gap-4 mt-4 mb-12 z-50">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i
+                                class="fa-brands fa-facebook-f text-white text-[20px] transition-transform duration-500 ease-in-out hover:scale-125"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/mustang_heli88?igsh=d2RpYXphdXZmdWI1" target="_blank">
+                            <i
+                                class="fa-brands fa-instagram text-white text-[20px] transition-transform duration-500 ease-in-out hover:scale-125"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/new-mustang-helicopter-pvt-ltd/" target="_blank">
+                            <i
+                                class="fa-brands fa-linkedin-in text-white text-[20px] transition-transform duration-500 ease-in-out hover:scale-125"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -51,18 +59,37 @@
                     <i class="fa-solid fa-arrow-down text-white"></i>
                 </div>
             </div>
-
             <div class="flex flex-col items-center relative">
-                <div class="w-screen h-auto z-10">
+                <div class="w-screen h-auto z-40">
                     <img src="./assets/images/mountain.png">
                 </div>
-                <div class="w-[70%] md:w-[670px] h-auto absolute top-[-40%] animate-slide-up ">
+                <!--Mini clouds-->
+                <div class="cloud1 absolute top-[-35%] max-w-[216px] h-auto cloud-right">
+                    <img src="./assets/images/cloud1.webp" class="w-full h-full object-contain">
+                </div>
+                <div class="cloud2 absolute top-[-30%] max-w-[168px] h-auto left-[20%] cloud-left">
+                    <img src="./assets/images/cloud2.webp" class="w-full h-full object-contain">
+                </div>
+                <div class="cloud3 absolute top-[-15%] max-w-[216px] h-auto left-[10%] cloud-left">
+                    <img src="./assets/images/cloud1.webp" class="w-full h-full object-contain">
+                </div>
+                <div class="cloud4 absolute top-[-10%] max-w-[168px] h-auto right-[40%] cloud-right">
+                    <img src="./assets/images/cloud2.webp" class="w-full h-full object-contain">
+                </div>
+                <!--Large clouds-->
+                <div class="absolute right-0 cloud-up z-20 cloud-up-right">
+                    <img src="./assets/images/cloud-right.webp">
+                </div>
+                <div class="absolute left-0 z-20 cloud-up cloud-up-left">
+                    <img src="./assets/images/cloud-left.webp">
+                </div>
+                <div class="max-w-[600px] h-[300px] z-30 absolute top-0 left-1/2 -translate-x-1/2 animate-slide-up ">
                     <img src="./assets/images/helicopter.png" class="w-full h-full object-contain">
                 </div>
             </div>
         </section>
 
-        <section class="sneek-peak-section mt-[-13%] relative z-20 pb-20">
+        <section class="sneek-peak-section mt-[-13%] relative z-50 pb-20">
             <div class="section-wrapper">
                 <h1
                     class="text-[#FE7510] font-bold text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] text-center pb-[50px] uppercase">
@@ -77,8 +104,8 @@
                             class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110">
                     </div>
                     <div class="image-card h-[440px] w-full rounded-xl overflow-hidden">
-                        <img src="./assets/images/image-2.jpg"
-                            class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110">
+                        <img src="./assets/images/image-2.jpg" class="w-full h-full object-cover transiti
+                            on-transform duration-500 ease-in-out hover:scale-110">
                     </div>
                 </div>
 
@@ -119,4 +146,5 @@
         </section>
     </main>
 </body>
+
 </html>
