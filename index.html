@@ -101,8 +101,10 @@
                             class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110">
                     </div>
                     <div class="image-card h-[440px] w-full rounded-xl overflow-hidden">
-                        <video src="./assets/images/video.MOV" autoplay loop playsinline
-                            class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110">
+                        <video id="introVideo" autoplay loop playsinline muted>
+                            <source src="./assets/images/video.mp4" type="video/mp4">
+                        </video>
+
                     </div>
                     <div class="image-card h-[440px] w-full rounded-xl overflow-hidden">
                         <img src="./assets/images/image-2.jpg" class="w-full h-full object-cover transiti
@@ -146,6 +148,7 @@
             </div>
         </section>
     </main>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
