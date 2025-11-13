@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 
-<body class="" style="background: linear-gradient(180deg, #303030 0%, #000000 100%);
-">
+<body class="" style="background: linear-gradient(180deg, #303030 0%, #000000 100%);">
     <main class="overflow-hidden">
         <section class="landing-section" style="background: linear-gradient(180deg, #0376B8 0%, #9ADAFF 100%);">
             <div class="section-wrapper">
@@ -25,11 +24,13 @@
                     <div class="relative">
                         <div id="soundButton"
                             class="absolute lg:top-0 left-0 flex items-center gap-2 cursor-pointer z-999 lg:pl-4 pl-2 sm:-top-2 -top-3">
-                            <p class="font-['Montserrat'] font-semibold sm:text-lg text-base text-[#000000] capitalize">
+                             
+                            <p class="font-['Montserrat'] font-semibold sm:text-[16px] text-[12px] text-white capitalize">
                                 click for sound
                             </p>
-                            <div class="w-5 h-5 ">
-                                <img src="./assets/images/volume.png" alt="" class="w-full h-full object-contain">
+                             
+                            <div class=" ">
+                                <i class="fa-solid fa-volume-low text-white"></i>
                             </div>
                         </div>
                         <h1
@@ -115,9 +116,8 @@
                     </div>
                     <div class="image-card h-[440px] w-full rounded-xl overflow-hidden">
                         <video id="introVideo" autoplay loop playsinline muted>
-                            <source src="./assets/images/video.mp4" type="video/mp4">
+                            <source src="./assets/images/new-video.mp4" type="video/mp4">
                         </video>
-
                     </div>
                     <div class="image-card h-[440px] w-full rounded-xl overflow-hidden">
                         <img src="./assets/images/image-2.jpg" class="w-full h-full object-cover transiti
@@ -163,5 +163,4 @@
     </main>
     <script src="./assets/js/index.js"></script>
 </body>
-
 </html>
