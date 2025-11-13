@@ -1,19 +1,18 @@
 const video = document.getElementById('introVideo');
 const soundButton = document.getElementById('soundButton');
 
-// Start muted autoplay
-video.muted = true;
-video.play().catch(() => console.log('Autoplay failed'));
+soundButton.addEventListener('click', () => {
+    // iOS requires unmuted play directly inside the gesture
+    video.muted = false; 
+    video.volume = 0.5;
 
-// Function to enable sound
-function enableSound() {
-  video.muted = false;
-  video.volume = 0.5;
-  video.play().catch(err => console.log('Play prevented', err));
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+        playPromise
+            .then(() => console.log('Audio started'))
+            .catch(err => console.log('Play prevented', err));
+    }
 
-  // Remove click listener after enabling sound
-  soundButton.removeEventListener('click', enableSound);
-}
-
-// Add click event to your div
-soundButton.addEventListener('click', enableSound);
+    // Remove the click listener after sound is enabled
+    soundButton.style.display = 'none'; // hide button if you want
+});
